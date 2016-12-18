@@ -1,0 +1,33 @@
+{
+  "name": "archive-app2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon ./bin/www",
+    "test": "tape test/*.js | tap-spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/katenorquay/archive-app2.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/katenorquay/archive-app2/issues"
+  },
+  "homepage": "https://github.com/katenorquay/archive-app2#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "dotenv": "^2.0.0",
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
+    "nodemon": "^1.11.0",
+    "path": "^0.12.7",
+    "superagent": "^2.3.0",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.6.2",
+    "unirest": "^0.5.1"
+}
+}

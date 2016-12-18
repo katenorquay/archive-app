@@ -1,0 +1,42 @@
+body {
+  /*background-color: blue;*/
+  background-image: url('http://assets.itsnicethat.com/system/files/082015/55d4a47d7fa44c4043000011/images_slice_large/Cameron-s-World-2-geocities-its-nice-that-1.jpg?1440087886');
+  background-size: 350px;
+}
+
+.content-container {
+  background-color: #ff0066;
+  width: 70%;
+  height: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10%;
+  border-radius: 10px;
+  text-align: center;
+  padding-bottom: 20px;
+  border: 5px solid blue;
+}
+
+h1 {
+  font-family: 'monospace';
+  font-size: 50px;
+  font-weight: bold;
+  color: blue;
+}
+
+.addButton {
+  background-color: white;
+  border: 5px solid blue;
+  font-family: 'monospace';
+  font-size: 30px;
+  color: blue;
+  margin-bottom: 30px;
+}
+
+.years {
+  height: 75px;
+  width: 175px;
+  border: 5px solid blue;
+  font-family: 'monospace';
+  font-size: 25px;
+}

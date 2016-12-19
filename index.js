@@ -57,5 +57,3 @@ subscribe(() => {
 })
 
 dispatch({type: 'INIT'})
-
-//hello

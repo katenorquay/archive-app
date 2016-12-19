@@ -1,7 +1,12 @@
 import React from 'react'
 import Header from './Header'
 
-module.exports = (props) =>
+function Search(props) {
+  function BeginSearch(e) {
+    e.preventDefault()
+    props.dispatch({type: 'CHANGE_PAGE', payload: '/results'})
+  }
+  return (
   <div>
     <Header />
     <div className='info'>
@@ -10,6 +15,9 @@ module.exports = (props) =>
     </div>
     <form>
      <input placeholder='Enter Url' type='text'></input>
-     <input type='submit' value='submit' onClick={() => props.dispatch({type: 'CHANGE_PAGE', action: '/results'})}/>
+     <input type='submit' value='submit' onClick={BeginSearch}/>
     </form>
   </div>
+)}
+
+module.exports = Search

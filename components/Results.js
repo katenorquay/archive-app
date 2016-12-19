@@ -1,12 +1,24 @@
 import React from 'react'
+import Header from './Header'
 
-module.exports = ({state, dispatch}) =>
-<div>
-  return state.screenshots.map(function (shot) {
-      <div>
-      <img src ={shot.screenshot}></img>
-      <h3>{shot.title}</h3>
-      <h4>{shot.year}</h4>
-      </div>
-  })
-</div>
+function Results(props) {
+  return (
+    <div>
+    <Header/>
+    {props.state.screenshots.map(function (shot) {
+      return (
+        <div className='screenshot-container'>
+          <img className='screenshot-image' src={shot.image}></img>
+          <div className='screenshot-info'>
+            <h3>{shot.title}</h3>
+            <h3>{shot.year}</h3>
+          </div>
+        </div>
+      )
+    })}
+    </div>
+  )
+}
+
+
+module.exports = Results

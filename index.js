@@ -14,28 +14,28 @@ var initialState = {
   screenshots: [
     {
     title: 'Trademe',
-    year: 2001,
-    screenshot: 'http://static.tumblr.com/uhg4bc4/50wm2srxg/the-design-nerd_smallest.jpg'
+    year: 2000,
+    image: 'http://static.tumblr.com/uhg4bc4/50wm2srxg/the-design-nerd_smallest.jpg'
     },{
     title: 'Trademe',
     year: 2001,
-    screenshot: 'http://static.tumblr.com/uhg4bc4/50wm2srxg/the-design-nerd_smallest.jpg'
+    image: 'http://static.tumblr.com/uhg4bc4/50wm2srxg/the-design-nerd_smallest.jpg'
     },{
     title: 'Trademe',
-    year: 2001,
-    screenshot: 'http://static.tumblr.com/uhg4bc4/50wm2srxg/the-design-nerd_smallest.jpg'
+    year: 2002,
+    image: 'http://static.tumblr.com/uhg4bc4/50wm2srxg/the-design-nerd_smallest.jpg'
     },{
     title: 'Trademe',
-    year: 2001,
-    screenshot: 'http://static.tumblr.com/uhg4bc4/50wm2srxg/the-design-nerd_smallest.jpg'
+    year: 2003,
+    image: 'http://static.tumblr.com/uhg4bc4/50wm2srxg/the-design-nerd_smallest.jpg'
     },{
     title: 'Trademe',
-    year: 2001,
-    screenshot: 'http://static.tumblr.com/uhg4bc4/50wm2srxg/the-design-nerd_smallest.jpg'
+    year: 2004,
+    image: 'http://static.tumblr.com/uhg4bc4/50wm2srxg/the-design-nerd_smallest.jpg'
     },{
     title: 'Trademe',
-    year: 2001,
-    screenshot: 'http://static.tumblr.com/uhg4bc4/50wm2srxg/the-design-nerd_smallest.jpg'
+    year: 2005,
+    image: 'http://static.tumblr.com/uhg4bc4/50wm2srxg/the-design-nerd_smallest.jpg'
     }
   ]
 }

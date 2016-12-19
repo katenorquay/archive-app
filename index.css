@@ -28,3 +28,23 @@ input {
   height: 60px;
   text-align: center;
 }
+
+.screenshot-container {
+  width: 45%;
+  text-align: center;
+  display: inline-block;
+}
+
+.screenshot-container:hover {
+  border: solid 2px #444;
+}
+
+.screenshot-info {
+  text-align: center;
+}
+
+h3 {
+  font-family: sans-serif;
+  color: #444;
+  font-size: 15px;
+}

@@ -1,21 +1,38 @@
 import React from 'react'
 import Header from './Header'
+import callAPI from '../callAPI'
 
-function Search(props) {
-  function BeginSearch(e) {
+function Search({state, dispatch}) {
+  function urlSearch(e) {
     e.preventDefault()
-    props.dispatch({type: 'CHANGE_PAGE', payload: '/results'})
+    var userInput = {
+      url: document.getElementById('url').value
+    }
+    callAPI(dispatch, userInput, state)
   }
+
+  function yearSearch(e) {
+    e.preventDefault()
+    var userInput = {
+      year: document.getElementById('year').value
+    }
+    callAPI(dispatch, userInput, state)
+  }
+
   return (
   <div>
     <Header />
     <div className='info'>
       <h3>How It Works:</h3>
-      <p>Enter a url, the years you are interested in seeing that site, and how often you want to see it. This app will find screenshots archived on the wayback machine to show you a quick picture of your site through out time</p>
+      <p>Enter a url that you are interested in seeing throughout time, or a time period that you want to see. This app will use the wayback machine to show archived screenshots of your desired site/time period</p>
     </div>
     <form>
-     <input placeholder='Enter Url' type='text'></input>
-     <input type='submit' value='submit' onClick={BeginSearch}/>
+     <input placeholder='Enter Url' type='text' id='url'></input>
+     <input type='submit' value='submit' onClick={urlSearch}/>
+    </form>
+    <form>
+     <input placeholder='Enter Year' type='text' id='year'></input>
+     <input type='submit' value='submit' onClick={yearSearch}/>
     </form>
   </div>
 )}

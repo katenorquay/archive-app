@@ -11,6 +11,8 @@ const main = document.querySelector('main')
 
 var initialState = {
   currentPage: '/',
+  requestInProgress: false,
+  requestUnsuccessful: true,
   screenshots: [
     {
     title: 'Trademe',

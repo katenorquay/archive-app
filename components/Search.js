@@ -10,5 +10,6 @@ module.exports = (props) =>
     </div>
     <form>
      <input placeholder='Enter Url' type='text'></input>
+     <input type='submit' value='submit' onClick={() => props.dispatch({type: 'CHANGE_PAGE', action: '/results'})}/>
     </form>
   </div>

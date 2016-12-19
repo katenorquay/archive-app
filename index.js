@@ -4,7 +4,7 @@ import {createStore} from 'redux'
 import reducer from './reducer'
 import sheetRouter from 'sheet-router'
 
-import HomePage from './components/HomePage'
+import Search from './components/Search'
 
 const main = document.querySelector('main')
 
@@ -16,7 +16,7 @@ var initialState = {
 const {dispatch, getState, subscribe} = createStore(reducer, initialState)
 
 const route = sheetRouter({default: '/404'}, [
-  ['/', params => HomePage]
+  ['/', params => Search]
 ])
 
 subscribe(() => {

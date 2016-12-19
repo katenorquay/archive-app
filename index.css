@@ -1,4 +1,30 @@
 .header {
   text-align: center;
-  background-color: blue;
+  margin-top: 20px;
+}
+
+.btn {
+  font-family: sans-serif;
+  font-size: 15px;
+  color: #444;
+  margin: 5px 15px 5px 15px;
+}
+
+.info {
+  text-align: center;
+  width: 50%;
+  margin: 50px auto 50px auto;
+  font-family: sans-serif;
+  color: #444;
+}
+
+form {
+  text-align: center;
+  margin-top: 50px;
+}
+
+input {
+  width: 35%;
+  height: 60px;
+  text-align: center;
 }

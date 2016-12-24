@@ -1,6 +1,6 @@
 import request from 'superagent'
 
-function callAPI(dispatch, userInput, state) {
+function callPostAPI(dispatch, userInput, state) {
   dispatch({type: 'REQUEST_INIT'})
   request
     .post(`the route tbc`)
@@ -15,4 +15,4 @@ function callAPI(dispatch, userInput, state) {
     })
 }
 
-module.exports = callAPI
+module.exports = callPostAPI

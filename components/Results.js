@@ -1,16 +1,18 @@
 import React from 'react'
 import Header from './Header'
 
-function Results(props) {
+function Results({state, dispatch}) {
+  console.log(state.screenshots)
   return (
     <div>
     <Header/>
-    {props.state.screenshots.map(function (shot) {
+    {state.screenshots.year.map(function (shot) {
+      console.log(shot)
       return (
         <div className='screenshot-container'>
-          <img className='screenshot-image' src={shot.image}></img>
+          <img className='screenshot-image' src={shot.image_url}></img>
           <div className='screenshot-info'>
-            <h3>{shot.title}</h3>
+            <h2>{shot.page_url}</h2>
             <h3>{shot.year}</h3>
           </div>
         </div>

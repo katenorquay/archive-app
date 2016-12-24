@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from './Header'
-import callAPI from '../callAPI'
+import callPostAPI from '../callPostAPI'
+import callGetAPI from '../callGetAPI'
 
 function Search({state, dispatch}) {
   function urlSearch(e) {
@@ -8,7 +9,8 @@ function Search({state, dispatch}) {
     var userInput = {
       url: document.getElementById('url').value
     }
-    callAPI(dispatch, userInput, state)
+    console.log(url)
+    callPostAPI(dispatch, userInput, state)
   }
 
   function yearSearch(e) {
@@ -16,7 +18,7 @@ function Search({state, dispatch}) {
     var userInput = {
       year: document.getElementById('year').value
     }
-    callAPI(dispatch, userInput, state)
+    callGetAPI(dispatch, userInput, state)
   }
 
   return (
@@ -27,11 +29,11 @@ function Search({state, dispatch}) {
       <p>Enter a url that you are interested in seeing throughout time, or a time period that you want to see. This app will use the wayback machine to show archived screenshots of your desired site/time period</p>
     </div>
     <form>
-     <input placeholder='Enter Url' type='text' id='url'></input>
+     <input placeholder='Enter Url' type='text' id='url'/>
      <input type='submit' value='submit' onClick={urlSearch}/>
     </form>
     <form>
-     <input placeholder='Enter Year' type='text' id='year'></input>
+     <input placeholder='Enter Year' type='text' id='year'/>
      <input type='submit' value='submit' onClick={yearSearch}/>
     </form>
   </div>

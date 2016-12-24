@@ -12,6 +12,7 @@ module.exports = (state, action) => {
     case 'REQUEST_SUCCESSFUL':
     newState.requestInProgress = false
     newState.requestUnsuccessful = false
+    newState.screenshots = payload
     return newState
     case 'REQUEST_UNSUCCESSFUL':
     newState.requestInProgress = false

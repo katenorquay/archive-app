@@ -30,21 +30,21 @@ input {
 }
 
 .screenshot-container {
-  width: 45%;
+  width: 50%;
   text-align: center;
   display: inline-block;
-}
-
-.screenshot-container:hover {
-  border: solid 2px #444;
+  margin-top: 50px;
 }
 
 .screenshot-info {
   text-align: center;
 }
 
-h3 {
+.screenshot-image {
+  width: 550px;
+}
+
+h3, h2 {
   font-family: sans-serif;
-  color: #444;
-  font-size: 15px;
+  color: #444
 }

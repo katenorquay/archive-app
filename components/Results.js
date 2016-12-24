@@ -6,7 +6,7 @@ function Results({state, dispatch}) {
   return (
     <div>
     <Header/>
-    {state.screenshots.year.map(function (shot) {
+    {state.screenshots.designs.map(function (shot) {
       console.log(shot)
       return (
         <div className='screenshot-container'>

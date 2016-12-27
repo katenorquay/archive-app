@@ -4,21 +4,24 @@ module.exports = (state, action) => {
   const {type, payload} = action
   switch (type) {
     case 'CHANGE_PAGE':
-    newState.currentPage = payload
-    return newState
+      newState.currentPage = payload
+      return newState
     case 'REQUEST_INIT':
-    newState.requestInProgress = true
-    return newState
+      newState.requestInProgress = true
+      return newState
     case 'REQUEST_SUCCESSFUL':
-    newState.requestInProgress = false
-    newState.requestUnsuccessful = false
-    newState.screenshots = payload
+      newState.requestInProgress = false
+      newState.requestUnsuccessful = false
+      newState.screenshots = payload
     return newState
-    case 'REQUEST_UNSUCCESSFUL':
-    newState.requestInProgress = false
-    newState.requestUnsuccessful = true
+      case 'REQUEST_UNSUCCESSFUL':
+      newState.requestInProgress = false
+      newState.requestUnsuccessful = true
     return newState
+      case 'VIEW_SINGLE_DESIGN':
+      newState.singleDesignId = payload
+      return newState
     default:
-    return newState
+      return newState
   }
 }

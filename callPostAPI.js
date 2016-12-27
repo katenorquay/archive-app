@@ -10,7 +10,7 @@ function callPostAPI(dispatch, userInput, state) {
         dispatch({type: 'REQUEST_UNSUCCESSFUL'})
       } else {
         dispatch({type: 'REQUEST_SUCCESSFUL', payload: res.body})
-        dispatch({type: 'CHANGE_PAGE', payload: '/results'})
+        dispatch({type: 'CHANGE_PAGE', payload: '/designs'})
       }
     })
 }

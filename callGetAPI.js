@@ -6,7 +6,7 @@ function callGetAPI(dispatch, userInput, state) {
     .end((err, res) => {
       if (err) console.log(err)
       dispatch({type: 'REQUEST_SUCCESSFUL', payload: res.body})
-      dispatch({type: 'CHANGE_PAGE', payload: '/results'})
+      dispatch({type: 'CHANGE_PAGE', payload: '/designs'})
     })
 }
 

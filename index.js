@@ -6,7 +6,6 @@ import sheetRouter from 'sheet-router'
 
 import Search from './components/Search'
 import Results from './components/Results'
-import singleDesign from './components/singleDesign'
 
 const main = document.querySelector('main')
 
@@ -14,7 +13,6 @@ var initialState = {
   currentPage: '/',
   requestInProgress: false,
   requestUnsuccessful: true,
-  singleDesignId: null,
   screenshots: []
 }
 

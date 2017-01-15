@@ -2,26 +2,29 @@ import React from 'react'
 import Header from './Header'
 
 function Results({state, dispatch}) {
+  var {screenshots} = state
   console.log(state)
   return (
     <div>
     <Header/>
-    {state.screenshots.designs.map(function (shot) {
-      console.log(shot)
+    {screenshots.designs
+      .filter(design => screenshots.designs[0] || design.year !== screenshots.designs[0].year)
+      .map((design) => {
       return (
-        <a href={shot.wayback_url}>
-        <div className='screenshot-container'>
-          <img className='screenshot-image' src={shot.image_url}></img>
-          <div className='screenshot-info'>
-            <h2>{shot.page_url}</h2>
-            <h3>{shot.year}</h3>
+        <a href={design.wayback_url}>
+          <div className='screenshot-container'>
+            <img className='screenshot-image' src={design.image_url}></img>
+            <div className='screenshot-info'>
+              <h2>{design.page_url}</h2>
+              <h3>{design.year}</h3>
+            </div>
           </div>
-        </div>
         </a>
       )
-    })}
-    </div>
-  )
+    })
+  }
+  </div>
+)
 }
 
 

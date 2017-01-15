@@ -37,8 +37,6 @@ function Search({state, dispatch}) {
     <form>
      <input placeholder='Enter Url' type='text' id='url'/>
      <input type='submit' value='submit' onClick={urlSearch}/>
-     <Loader className={inProgressClass}/>
-     <p className={successClass}>Something went wrong</p>
     </form>
     <form>
      <input placeholder='Enter Year' type='text' id='year'/>

@@ -18,9 +18,6 @@ module.exports = (state, action) => {
       newState.requestInProgress = false
       newState.requestUnsuccessful = true
     return newState
-      case 'VIEW_SINGLE_DESIGN':
-      newState.singleDesignId = payload
-      return newState
     default:
       return newState
   }

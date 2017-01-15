@@ -64,3 +64,9 @@ h3, h2 {
 .loadingPulse div {
   background-color: black !important;
 }
+
+.no-results {
+  text-align: center;
+  margin-top: 10%;
+
+}

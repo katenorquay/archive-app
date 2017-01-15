@@ -1,9 +1,15 @@
 import React from 'react'
+import Loader from 'halogen/PulseLoader'
+
 import Header from './Header'
 import callPostAPI from '../callPostAPI'
 import callGetAPI from '../callGetAPI'
 
 function Search({state, dispatch}) {
+
+  const inProgressClass = state.requestInProgress ? 'loadingPulse' : 'hidden'
+  const successClass = state.requestUnsuccessful ? '' : 'hidden'
+
   function urlSearch(e) {
     e.preventDefault()
     var userInput = {
@@ -31,10 +37,14 @@ function Search({state, dispatch}) {
     <form>
      <input placeholder='Enter Url' type='text' id='url'/>
      <input type='submit' value='submit' onClick={urlSearch}/>
+     <Loader className={inProgressClass}/>
+     <p className={successClass}>Something went wrong</p>
     </form>
     <form>
      <input placeholder='Enter Year' type='text' id='year'/>
      <input type='submit' value='submit' onClick={yearSearch}/>
+     <Loader className={inProgressClass}/>
+     <p className={successClass}>Something went wrong</p>
     </form>
   </div>
 )}

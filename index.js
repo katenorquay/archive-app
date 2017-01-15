@@ -11,8 +11,8 @@ const main = document.querySelector('main')
 
 var initialState = {
   currentPage: '/',
-  requestInProgress: false,
-  requestUnsuccessful: true,
+  requestInProgress: true,
+  requestUnsuccessful: false,
   screenshots: []
 }
 

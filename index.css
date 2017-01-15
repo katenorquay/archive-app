@@ -52,3 +52,15 @@ h3, h2 {
   font-family: sans-serif;
   color: #444
 }
+
+.loadingPulse {
+  color: black;
+}
+
+.hidden {
+  display: none;
+}
+
+.loadingPulse div {
+  background-color: black !important;
+}

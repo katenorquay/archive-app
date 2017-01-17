@@ -6,6 +6,7 @@ import sheetRouter from 'sheet-router'
 
 import Search from './components/Search'
 import Results from './components/Results'
+import Loading from './components/Loading'
 
 const main = document.querySelector('main')
 
@@ -22,7 +23,7 @@ const {dispatch, getState, subscribe} = createStore(reducer, initialState)
 const route = sheetRouter({default: '/404'}, [
   ['/', (params) => Search],
   ['/designs', (params) => Results],
-  ['/designs/:id', (params) => singleDesign]
+  ['/loading', (params) => Loading]
 ])
 
 subscribe(() => {
